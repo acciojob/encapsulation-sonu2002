@@ -3,7 +3,7 @@ package com.driver;
 public class Main {
 
      public static void main(String[] args) {
-          RWOnly rwOnlyObj = new RWOnly("John Doe");
+          RWOnly rwOnlyObj = new RWOnly();
 
 //          rwOnlyObj.name = "Jane Smith"; // This will result in a compilation error
 //          name has private access in com.driver.RWOnly
@@ -13,7 +13,7 @@ public class Main {
 //          System.out.println("Name: " + rwOnlyObj.name);
 
           rwOnlyObj.setName("Sonu");
-          System.out.println(rwOnlyObj.getName());
+          rwOnlyObj.getName();
 
      }
 
